@@ -3,3 +3,95 @@
    margin: 0;
    padding: 0;
 }
+
+body {
+   font-family: 'Roboto', sans-serif;
+}
+
+header {
+   height: 80px;
+   color: white;
+   background-color: black;
+}
+
+h1 {
+   line-height: 80px;
+   vertical-align: middle;
+   margin-left: 20px;
+}
+
+
+
+.todo-list {
+   list-style-type: none;
+}
+
+.todo-list li i {
+   color: red;
+   float: right;
+}
+
+.todo-list li {
+   border: 1px solid black;
+   width: 45%;
+   margin: 0 2.5% 2.5% 2.5%;
+   padding: 15px;
+   border-radius: 5px;
+   display: inline-block;
+}
+
+#root {
+   padding: 20px;
+}
+
+h2 {
+   margin-left: 2.5%;
+   margin-bottom: 20px;
+}
+
+#input-field {
+   margin-left: 2.5%;
+   padding: 10px;
+}
+
+
+#input-field input {
+   width: 50%;
+   padding: 12px 20px;
+   margin: 8px 0;
+   display: inline-block;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 20px;
+}
+
+#input-field button {
+   background-color: black;
+   color: white;
+   padding: 12px 20px;
+   margin-left: 20px;
+   border: 1px solid #ccc;
+   border-radius: 50px;
+   font-weight: bold;
+}
+
+#input-field button:hover {
+   opacity: 0.8;
+}
+
+#list-wrapper {
+   padding: 10px;
+}
+
+
+
+button, input {
+  outline: none;
+  box-shadow: none;
+}
+
+.list-complete-enter, .list-complete-leave-to
+/* .list-complete-leave-active below version 2.1.8 */ {
+  opacity: 0;
+  transform: translateY(30px);
+}

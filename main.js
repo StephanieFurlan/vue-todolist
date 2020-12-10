@@ -13,10 +13,13 @@ var root = new Vue({
    },
    methods: {
       addTodoItem() {
-         this.todoList.push({
-            text: this.todoItem
-         });
-         this.todoItem = "";
+         if (this.todoItem != "") {
+            this.todoList.push({
+               text: this.todoItem
+            });
+            this.todoItem = "";
+         }
+
       },
       deleteTodoItem(index) {
          this.todoList.splice(index, 1);
